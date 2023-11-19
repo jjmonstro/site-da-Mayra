@@ -1,4 +1,5 @@
 # calculadora-juros
 toma essa no teu peitão
-![CelebrationGoalGIF](https://github.com/jjmonstro/calculadora-juros/assets/142437981/3683439e-7eab-4392-9589-50e8943d3f5b)
+![CelebrationGoalGIF](https://github.com/jjmonstro/calculadora-juros/assets/142437981/8ebb1e8d-8e25-4bbc-b569-6eba45281b7d)
+
 
