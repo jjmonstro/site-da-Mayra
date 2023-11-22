@@ -1,3 +1,71 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Inika', serif;
+}
+/* navbar */
+#navbar{
+    padding: 2em;
+    background-color: #000020;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#navbar a {
+    font-size: 1.7em;
+    color: #F0F2EF;
+    cursor: pointer;
+    margin: 0.8em;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+#navbar a:focus,
+#navbar a:hover {
+  color: #fff;
+}
+
+#navbar a:focus:after,
+#navbar a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+#navbar a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+/* fim navbar */
+/* content */
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#titleContainer{
+    margin: 1em;
+}
+#textContainer{
+    margin: 2em;
+    font-size: 2.0em;
+}
+/* fim do content */
 #calculadoraDiv{
     background-color: #AAAAAA;
     display: flex;
@@ -41,7 +109,7 @@
 }
 
 #labelCalculadora{
-    margin: 4%;
+    margin: 4em;
     margin-left: 3.2%;
     font-size: 120%;
     font-family: 'Inika', serif;
@@ -65,3 +133,16 @@
     flex-direction: column;
     inline-size: 45%;
 }
+/* footer */
+footer{
+    padding: 2em;
+    background-color: #000020;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+footer img{
+    width: 2em;
+}
+/* footer */
