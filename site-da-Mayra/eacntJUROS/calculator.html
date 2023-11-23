@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+	<head>
+		<title>Calculadora</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="imagex/png" href="img/has.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<nav id="navbar">
+			<img src="img/logo_selo_positivo.png" width="80px" height="80px" id="etechas">
+			<a href="index.html">HOME</a> |
+			<a href="">CALCULE</a> |
+			<a href="about.html">SOBRE NÓS</a>
+		</nav>
+        <br>
+
+		<label for="calculadora" id="labelCalculadora">Calculadora de Juros Compostos</label><br>
+		<div id="calculadoraDiv">
+			<div class="exibicoesDiv" id="exibicoesDivComposto">
+			</div>
+			<div id="inputsDiv">
+				<input type="text" id="capitalInicialComposto" class="inputsClass" min="0" placeholder="Capital Inicial" oninput="formatarComoDinheiro(this)">
+				<input type="text" id="taxaComposto" class="inputsClass" min="0" placeholder="Taxa (%)" oninput="formataComoTaxa(this)">
+				<input type="number" id="tempoComposto" class="inputsClass" min="0" placeholder="Tempo (meses)">
+				<button onclick="calcularComposto()">CALCULAR</button>
+			</div><br><br><br>
+		</div>
+
+
+		<label for="calculadora" id="labelCalculadora">Calculadora de Juros Simples</label><br>
+		<div id="calculadoraDiv">
+			<div class="exibicoesDiv" id="exibicoesDivSimples">
+			</div>
+			<div id="inputsDiv">
+				<input type="text" id="capitalInicialSimples" class="inputsClass" min="0" placeholder="Capital Inicial" oninput="formatarComoDinheiro(this)">
+				<input type="text" id="taxaSimples" class="inputsClass" min="0" placeholder="Taxa (%)" oninput="formataComoTaxa(this)">
+				<input type="number" id="tempoSimples" class="inputsClass" min="0" placeholder="Tempo (meses)">
+				<button onclick="calcularSimples()">CALCULAR</button>
+			</div><br><br><br>
+		</div>
+		<footer>
+			<p>Juros Simples e Compostos</p>
+			<img id="logo_has" src="img/logo_selo_positivo.png" alt="logo etec has">
+		</footer>
+	</body>
+</html>
